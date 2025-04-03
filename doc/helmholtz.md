@@ -7,12 +7,12 @@ Neste documento, partiremos das equações de Maxwell no vácuo para deduzir a e
 ## 2. Equações de Maxwell no Vácuo
 
 Considerando regiões sem cargas livres ($\rho = 0$) e sem correntes livres ($\vec{J} = 0$), as equações de Maxwell no vácuo são:
-$$
-\nabla \cdot \vec{E} &= 0 \\
-\nabla \cdot \vec{H} &= 0 \\
-\nabla \times \vec{E} &= -\mu_0 \frac{\partial \vec{H}}{\partial t} \\
-\nabla \times \vec{H} &= \epsilon_0 \frac{\partial \vec{E}}{\partial t}
-$$
+
+$\nabla \cdot \vec{E} &= 0 $ 
+$\nabla \cdot \vec{H} &= 0 \\$
+$\nabla \times \vec{E} &= -\mu_0 \frac{\partial \vec{H}}{\partial t} \\$
+$\nabla \times \vec{H} &= \epsilon_0 \frac{\partial \vec{E}}{\partial t}$
+
 Assumindo um regime senoidal no tempo, com dependência temporal $e^{j\omega t}$, temos as equações de Maxwell em sua forma fasorial:
 
 \begin{align}
