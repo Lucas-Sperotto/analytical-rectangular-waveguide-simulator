@@ -9,20 +9,20 @@ Neste documento, partiremos das equações de Maxwell no vácuo para deduzir a e
 Considerando regiões sem cargas livres ($\rho = 0$) e sem correntes livres ($\vec{J} = 0$), as equações de Maxwell no vácuo são:
 
 \begin{align}
-\nabla \cdot \vec{E} &= 0 \\
-\nabla \cdot \vec{H} &= 0 \\
-\nabla \times \vec{E} &= -\mu_0 \frac{\partial \vec{H}}{\partial t} \\
-\nabla \times \vec{H} &= \epsilon_0 \frac{\partial \vec{E}}{\partial t}
+$\nabla \cdot \vec{E} &= 0 \\$
+$\nabla \cdot \vec{H} &= 0 \\$
+$\nabla \times \vec{E} &= -\mu_0 \frac{\partial \vec{H}}{\partial t} \\$
+$\nabla \times \vec{H} &= \epsilon_0 \frac{\partial \vec{E}}{\partial t}$
 \end{align}
 
 Assumindo um regime senoidal no tempo, com dependência temporal $e^{j\omega t}$, temos as equações de Maxwell em sua forma fasorial:
 
 \begin{align}
-\nabla \cdot \vec{E} &= 0 \\
-\nabla \cdot \vec{H} &= 0 \\
-\nabla \times \vec{E} &= -j\omega\mu_0 \vec{H} \\
-\nabla \times \vec{H} &= j\omega\epsilon_0 \vec{E}
-\end{align}
+$\nabla \cdot \vec{E} &= 0 \\$
+$\nabla \cdot \vec{H} &= 0 \\$
+$\nabla \times \vec{E} &= -j\omega\mu_0 \vec{H} \\$
+$\nabla \times \vec{H} &= j\omega\epsilon_0 \vec{E}$
+$\end{align}$
 
 ## 3. Propagação em Guias de Onda
 
