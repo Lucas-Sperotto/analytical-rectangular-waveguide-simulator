@@ -7,8 +7,10 @@ Neste documento, partiremos das equações de Maxwell no vácuo para deduzir a e
 ## 2. Equações de Maxwell no Vácuo
 
 Considerando regiões sem cargas livres ($\rho = 0$) e sem correntes livres ($\vec{J} = 0$), as equações de Maxwell no vácuo são:
+$$
+\nabla \cdot \vec{E} &= 0 
+$$
 
-$\nabla \cdot \vec{E} &= 0 $ 
 $$
 \nabla \cdot \vec{H} &= 0 
 $$
