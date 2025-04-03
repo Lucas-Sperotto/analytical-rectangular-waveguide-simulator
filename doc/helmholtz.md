@@ -7,14 +7,14 @@ Neste documento, partiremos das equações de Maxwell no vácuo para deduzir a e
 ## 2. Equações de Maxwell no Vácuo
 
 Considerando regiões sem cargas livres ($\rho = 0$) e sem correntes livres ($\vec{J} = 0$), as equações de Maxwell no vácuo são:
-
+$$
 \begin{align}
-$\nabla \cdot \vec{E} &= 0 \\$
-$\nabla \cdot \vec{H} &= 0 \\$
-$\nabla \times \vec{E} &= -\mu_0 \frac{\partial \vec{H}}{\partial t} \\$
-$\nabla \times \vec{H} &= \epsilon_0 \frac{\partial \vec{E}}{\partial t}$
+\nabla \cdot \vec{E} &= 0 \\
+\nabla \cdot \vec{H} &= 0 \\
+\nabla \times \vec{E} &= -\mu_0 \frac{\partial \vec{H}}{\partial t} \\
+\nabla \times \vec{H} &= \epsilon_0 \frac{\partial \vec{E}}{\partial t}
 \end{align}
-
+$$
 Assumindo um regime senoidal no tempo, com dependência temporal $e^{j\omega t}$, temos as equações de Maxwell em sua forma fasorial:
 
 \begin{align}
@@ -67,12 +67,12 @@ H_z(x, y) = X(x)Y(y)
 $$
 
 Substituindo na equação de Helmholtz e separando variáveis, obtemos duas equações diferenciais ordinárias:
-
+$$
 \begin{align}
 \frac{d^2X}{dx^2} + \left(\frac{m\pi}{a}\right)^2 X &= 0 \\
 \frac{d^2Y}{dy^2} + \left(\frac{n\pi}{b}\right)^2 Y &= 0
 \end{align}
-
+$$
 Com soluções harmônicas (senos e cossenos) que satisfazem as condições de contorno nas paredes condutoras do guia, temos:
 
 $$
