@@ -32,27 +32,27 @@ Para obter as equações diferenciais parciais que regem as componentes dos camp
 
 Vamos focar, por exemplo, na componente longitudinal $H_z$, para os modos TE (Transversais Elétricos), onde $E_z = 0$. Com manipulações vetoriais apropriadas e uso da identidade:
 
-\[
+$$
 \nabla \times (\nabla \times \vec{H}) = \nabla(\nabla \cdot \vec{H}) - \nabla^2 \vec{H}
-\]
+$$
 
 e sabendo que $\nabla \cdot \vec{H} = 0$, obtemos:
 
-\[
+$$
 \nabla^2 \vec{H} + \omega^2 \mu_0 \epsilon_0 \vec{H} = 0
-\]
+$$
 
 Analogamente, vale para $\vec{E}$:
 
-\[
+$$
 \nabla^2 \vec{E} + \omega^2 \mu_0 \epsilon_0 \vec{E} = 0
-\]
+$$
 
 Essa é a equação vetorial de Helmholtz. Para a componente longitudinal $H_z$, obtemos a equação escalar:
 
-\[
+$$
 \nabla_t^2 H_z + k_c^2 H_z = 0
-\]
+$$
 
 Onde:
 - $\nabla_t^2$ é o Laplaciano transversal: $\frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2}$
@@ -62,9 +62,9 @@ Onde:
 
 Buscando soluções separáveis na forma:
 
-\[
+$$
 H_z(x, y) = X(x)Y(y)
-\]
+$$
 
 Substituindo na equação de Helmholtz e separando variáveis, obtemos duas equações diferenciais ordinárias:
 
@@ -75,33 +75,31 @@ Substituindo na equação de Helmholtz e separando variáveis, obtemos duas equa
 
 Com soluções harmônicas (senos e cossenos) que satisfazem as condições de contorno nas paredes condutoras do guia, temos:
 
-\[
+$$
 H_z(x, y) = H_0 \cos\left(\frac{m\pi x}{a}\right) \cos\left(\frac{n\pi y}{b}\right)
-\]
+$$
 
 ## 5. Frequência de Corte $f_c$
 
 O número de onda de corte é dado por:
 
-\[
+$$
 k_c = \sqrt{\left(\frac{m\pi}{a}\right)^2 + \left(\frac{n\pi}{b}\right)^2}
-\]
+$$
 
 A constante de propagação na direção $z$ é:
 
-\[
+$$
 \beta = \sqrt{k_0^2 - k_c^2}, \quad \text{onde } k_0 = \frac{\omega}{c} = \frac{2\pi f}{c}
-\]
+$$
 
 A frequência de corte é obtida quando $\beta = 0$, ou seja, $k_0 = k_c$, resultando:
 
-\[
+$$
 f_c = \frac{c}{2} \sqrt{\left(\frac{m}{a}\right)^2 + \left(\frac{n}{b}\right)^2}
-\]
+$$
 
 Essa é a frequência abaixo da qual o modo $TE_{mn}$ não se propaga. Para os modos TM, o desenvolvimento é análogo, mas parte da componente longitudinal $E_z$.
 
 ---
-
-> Este documento será referenciado no `README.md` e serve como base teórica para os cálculos numéricos e visualizações presentes neste projeto.
 
