@@ -99,7 +99,7 @@ python3 scripts/animate_quiver_propagation.py
 > ⚠️ As animações são salvas automaticamente como `.mp4` em `data/campos/MODO/`
 
 - $Hz$ em plano XY: propagação espacial
-- Vetores $ \vec{E}_t $ com animação em tempo
+- Vetores $\vec{E}_t$ com animação em tempo
 - Propagação em z com vetores pulsando (modo TE₁₀, $Ex/Ey$)
 
 ![Exemplo vetorial](doc/figuras/quiver_demo.png) <!-- opcional -->
