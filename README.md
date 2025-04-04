@@ -57,7 +57,7 @@ README.md               ← Este arquivo
 ### 1. Cálculo das frequências de corte
 
 ```bash
-g++ src/calcular_frequencias.cpp -o calcular_frequencias
+g++ -std=c++17 src/calcular_frequencias.cpp -o calcular_frequencias
 ./calcular_frequencias
 ```
 
@@ -68,7 +68,7 @@ Isso gera o arquivo `data/frequencias/fc_lista.csv`.
 ### 2. Geração dos campos
 
 ```bash
-g++ src/calcular_campos.cpp -o calcular_campos
+g++ -std=c++17 src/calcular_campos.cpp -o calcular_campos
 ./calcular_campos
 ```
 
