@@ -2,7 +2,7 @@
 
 ## 1. Introdução
 
-Neste documento, partimos da solução da equação de Helmholtz para a componente longitudinal $H_z$ no modo $TE_{mn}$, e deduzimos todas as componentes dos campos elétricos e magnéticos $\vec{E}$ e $\vec{H}$ nos eixos $x$, $y$ e $z$.
+Neste documento, partimos da solução da equação de Helmholtz para a componente longitudinal $H_z$ no modo $TE_{mn}$ , e deduzimos todas as componentes dos campos elétricos e magnéticos $\vec{E}$ e $\vec{H}$ nos eixos $x$, $y$ e $z$.
 
 ## 2. Hipóteses e Forma do Campo
 
@@ -79,12 +79,14 @@ $$
 
 ### 6.2 Campos Magnéticos
 
+$$
 \begin{align}
 H_x &= \beta H_0 \frac{m\pi / a}{k_c^2} \sin\left(\frac{m\pi x}{a}\right) \cos\left(\frac{n\pi y}{b}\right) e^{j(\omega t - \beta z)} \\
 H_y &= \beta H_0 \frac{n\pi / b}{k_c^2} \cos\left(\frac{m\pi x}{a}\right) \sin\left(\frac{n\pi y}{b}\right) e^{j(\omega t - \beta z)} \\
 H_z &= H_0 \cos\left(\frac{m\pi x}{a}\right) \cos\left(\frac{n\pi y}{b}\right) e^{j(\omega t - \beta z)}
 \end{align}
+$$
 
 ---
 
-> Essas expressões podem ser implementadas numericamente para calcular os campos em cada ponto do guia, dado um modo $TE_{mn}$, com seus respectivos índices $m$, $n$, dimensões $a$, $b$, e frequência $f$. Em simulações, é comum usar a parte real desses campos para representar o valor físico no tempo.
+> Essas expressões podem ser implementadas numericamente para calcular os campos em cada ponto do guia, dado um modo $TE_{mn}$ , com seus respectivos índices $m$, $n$, dimensões $a$, $b$, e frequência $f$. Em simulações, é comum usar a parte real desses campos para representar o valor físico no tempo.
