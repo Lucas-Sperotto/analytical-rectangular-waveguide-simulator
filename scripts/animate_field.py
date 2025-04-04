@@ -9,7 +9,7 @@ modo = "TE10"
 componente = "Hz"
 plano = 'z'              # plano de corte: 'x', 'y', ou 'z'
 valor_fatia = 0.0        # valor fixo do corte (ex: z = 0.0)
-Nx, Ny, Nz = 41, 41, 21  # mesma resolução usada no C++
+Nx, Ny, Nz = 41, 41, 41  # mesma resolução usada no C++
 frequencia = 10e9        # frequência da onda (Hz)
 n_frames = 60            # número de frames na animação
 interval = 100           # intervalo entre frames (ms)
@@ -74,4 +74,4 @@ ani = animation.FuncAnimation(fig, update, frames=n_frames, interval=interval, b
 ani.save("animacao.mp4", writer="ffmpeg", fps=30)
 
 plt.tight_layout()
-plt.show()
+#plt.show()

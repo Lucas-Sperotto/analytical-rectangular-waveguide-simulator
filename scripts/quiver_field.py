@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 # ========== CONFIGURAÇÕES ==========
 modo = "TE10"
 componentes = ("Ex", "Ey")     # ou ("Hx", "Hy")
-Nx, Ny, Nz = 41, 41, 21        # resolução usada no cálculo
+Nx, Ny, Nz = 41, 41, 41        # resolução usada no cálculo
 z_val = 0.0                    # fatia em z
 # ===================================
 
@@ -42,4 +42,5 @@ ax.set_title(f"Campo vetorial ({componentes[0]}, {componentes[1]}) - {modo} em z
 ax.set_xlabel("x (m)")
 ax.set_ylabel("y (m)")
 plt.tight_layout()
-plt.show()
+plt.savefig("outputQuiver_plot.png")
+#plt.show()

@@ -45,14 +45,15 @@ def plot_slice(V, X, Y, eixo='z', plano_valor=0.0, title='Campo'):
     plt.ylabel(eixo_y)
     plt.title(title + f' - fatia em {eixo} = {plano_valor}')
     plt.tight_layout()
-    plt.show()
+    plt.savefig("output_plot.png")
+    #plt.show()
 
 # ==== CONFIGURAÇÕES DO USUÁRIO ====
 modo = "TE10"
 componente = "Hz"
 plano = 'z'         # fatiar em z (mostrar XY)
 valor_fatia = 0.0   # coordenada z em que fatiar
-Nx, Ny, Nz = 41, 41, 21  # precisa bater com resolução usada no C++
+Nx, Ny, Nz = 41, 41, 41  # precisa bater com resolução usada no C++
 # ==================================
 
 # Carrega CSV

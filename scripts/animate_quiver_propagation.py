@@ -8,7 +8,7 @@ import matplotlib.animation as animation
 modo = "TE10"
 componentes = ("Ex", "Ey")       # ou ("Hx", "Hy")
 frequencia = 10e9                # Hz
-Nx, Ny, Nz = 41, 41, 21
+Nx, Ny, Nz = 41, 41, 41
 n_frames = Nz                    # um frame por fatia z
 interval = 100                   # tempo entre frames (ms)
 # ===================================
@@ -74,4 +74,4 @@ saida = f"data/campos/{modo}/quiver_propagacao_{componentes[0]}_{componentes[1]}
 ani.save(saida, writer='ffmpeg', fps=30)
 print(f"Animação salva em: {saida}")
 
-plt.show()
+#plt.show()
