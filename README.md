@@ -2,7 +2,7 @@
 
 Este repositório contém um projeto completo e didático para o estudo dos modos eletromagnéticos em **guias de onda retangulares metálicos**, com:
 
-- Cálculo analítico dos campos $ \vec{E} $ e $ \vec{H} $ em C++
+- Cálculo analítico dos campos $\vec{E}$ e $\vec{H}$ em C++
 - Geração e exportação dos dados em arquivos CSV
 - Visualizações e animações em Python
 - Abordagem teórica detalhada para fins educacionais
