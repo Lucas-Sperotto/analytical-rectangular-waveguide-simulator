@@ -8,10 +8,10 @@ import matplotlib.animation as animation
 modo = "TE10"
 componentes = ("Ex", "Ey")     # ou ("Hx", "Hy")
 frequencia = 10e9              # Hz
-Nx, Ny, Nz = 41, 41, 21
+Nx, Ny, Nz = 41, 41, 41
 z_val = 0.0                    # valor fixo de z
-n_frames = 60
-interval = 100                 # ms entre frames
+n_frames = 90
+interval = 200                 # ms entre frames
 # ===================================
 
 c = 299792458
