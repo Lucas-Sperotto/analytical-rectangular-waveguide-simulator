@@ -81,6 +81,7 @@ Cria os campos em `data/campos/MODO/*.csv`.
 Instale dependências:
 ```bash
 pip install numpy pandas matplotlib
+sudo apt install ffmpeg
 ```
 
 E execute os scripts desejados, por exemplo:
