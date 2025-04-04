@@ -129,5 +129,3 @@ Você pode usar, adaptar, compartilhar e contribuir.
 - Modo interativo para comparar modos TE e TM lado a lado
 
 ---
-
-**Desenvolvido com ❤️ e Maxwell em mente.**
