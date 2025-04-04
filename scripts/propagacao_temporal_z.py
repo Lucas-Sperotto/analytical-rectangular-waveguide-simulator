@@ -7,7 +7,7 @@ import matplotlib.animation as animation
 # ========== CONFIGURAÇÕES ==========
 modo = "TE10"
 componente = "Hz"
-Nx, Ny, Nz = 41, 41, 21        # mesma resolução usada no C++
+Nx, Ny, Nz = 41, 41, 41        # mesma resolução usada no C++
 frequencia = 10e9              # frequência da onda
 n_frames = 60                  # número de quadros
 interval = 80                  # tempo entre frames (ms)
@@ -77,4 +77,4 @@ ani.save(saida, writer='ffmpeg', fps=30)
 print(f"Animação salva em: {saida}")
 
 plt.tight_layout()
-plt.show()
+#plt.show()
