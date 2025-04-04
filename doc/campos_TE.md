@@ -30,7 +30,7 @@ $$
 \end{align}
 $$
 
-## 4. Componentes dos Campos TE$_{mn}$
+## 4. Componentes dos Campos $TE_{mn}$
 
 A partir das equações de Maxwell, obtemos:
 
