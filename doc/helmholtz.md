@@ -11,9 +11,7 @@ Considerando regiões sem cargas livres ($\rho = 0$) e sem correntes livres ($\v
 $$
 \begin{align}
 \nabla \cdot \vec{E} &= 0 
-
 \nabla \cdot \vec{H} &= 0 
-
 \nabla \times \vec{E} &= -\mu_0 \frac{\partial \vec{H}}{\partial t} \\
 \nabla \times \vec{H} &= \epsilon_0 \frac{\partial \vec{E}}{\partial t}
 \end{align}
