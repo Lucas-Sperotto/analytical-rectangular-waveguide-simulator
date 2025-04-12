@@ -6,6 +6,7 @@
 #include <vector>
 #include <string>
 #include <iomanip>
+#include <algorithm>
 
 const double pi = M_PI;
 const double c = 299792458.0;
@@ -30,11 +31,42 @@ void salvar_csv(const std::string& nome, const std::vector<std::vector<std::vect
             for (int iz = 0; iz < Nz; ++iz) {
                 arq << std::fixed << std::setprecision(6)
                     << ix * dx << "," << iy * dy << "," << iz * dz << ","
-                    << campo[ix][iy][iz] << "\n";
+                    << std::scientific << campo[ix][iy][iz] << "\n";
             }
         }
     }
     arq.close();
+}
+
+// Normaliza um campo 3D entre -1 e 1
+std::vector<std::vector<std::vector<double>>> normalizeField3D(
+    const std::vector<std::vector<std::vector<double>>>& field) {
+
+    size_t Nx = field.size();
+    size_t Ny = field[0].size();
+    size_t Nz = field[0][0].size();
+
+    // Encontra o valor absoluto máximo
+    double maxAbs = 0.0;
+    for (size_t i = 0; i < Nx; ++i)
+        for (size_t j = 0; j < Ny; ++j)
+            for (size_t k = 0; k < Nz; ++k)
+                maxAbs = std::max(maxAbs, std::abs(field[i][j][k]));
+
+    // Inicializa campo normalizado com zeros
+    std::vector<std::vector<std::vector<double>>> normalized(
+        Nx, std::vector<std::vector<double>>(Ny, std::vector<double>(Nz, 0.0)));
+
+    if (maxAbs == 0.0)
+        return normalized; // campo nulo
+
+    // Normaliza
+    for (size_t i = 0; i < Nx; ++i)
+        for (size_t j = 0; j < Ny; ++j)
+            for (size_t k = 0; k < Nz; ++k)
+                normalized[i][j][k] = field[i][j][k] / maxAbs;
+
+    return normalized;
 }
 
 int main() {
@@ -135,6 +167,13 @@ int main() {
             salvar_csv(pasta + "Hx.csv", Hx, dx, dy, dz);
             salvar_csv(pasta + "Hy.csv", Hy, dx, dy, dz);
             salvar_csv(pasta + "Hz.csv", Hz, dx, dy, dz);
+            
+            //salva campos normalizados
+            salvar_csv(pasta + "Ex_norm.csv", normalizeField3D(Ex), dx, dy, dz);
+            salvar_csv(pasta + "Ey_norm.csv", normalizeField3D(Ey), dx, dy, dz);
+            salvar_csv(pasta + "Hx_norm.csv", normalizeField3D(Hx), dx, dy, dz);
+            salvar_csv(pasta + "Hy_norm.csv", normalizeField3D(Hy), dx, dy, dz);
+            salvar_csv(pasta + "Hz_norm.csv", normalizeField3D(Hz), dx, dy, dz);
         }
         if (tipo == "TM") {
             salvar_csv(pasta + "Ex.csv", Ex, dx, dy, dz);
@@ -142,6 +181,13 @@ int main() {
             salvar_csv(pasta + "Hx.csv", Hx, dx, dy, dz);
             salvar_csv(pasta + "Hy.csv", Hy, dx, dy, dz);
             salvar_csv(pasta + "Ez.csv", Ez, dx, dy, dz);
+
+            //salva campos normalizados
+            salvar_csv(pasta + "Ex_norm.csv", normalizeField3D(Ex), dx, dy, dz);
+            salvar_csv(pasta + "Ey_norm.csv", normalizeField3D(Ey), dx, dy, dz);
+            salvar_csv(pasta + "Hx_norm.csv", normalizeField3D(Hx), dx, dy, dz);
+            salvar_csv(pasta + "Hy_norm.csv", normalizeField3D(Hy), dx, dy, dz);
+            salvar_csv(pasta + "Ez_norm.csv", normalizeField3D(Ez), dx, dy, dz);
         }
 
         std::cout << "Campos calculados para " << modo << "\n";
